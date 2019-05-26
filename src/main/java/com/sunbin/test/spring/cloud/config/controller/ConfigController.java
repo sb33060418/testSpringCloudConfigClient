@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/config")
 public class ConfigController {
-	
+
 	@Value("${name}")
 	private String name;
 
 	@RequestMapping("/get")
 	public String getMessage() {
-		return "get config: name = "+ name;
+		return "get config: name = " + name;
 	}
 
 }
