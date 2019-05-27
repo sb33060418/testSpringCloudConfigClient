@@ -3,5 +3,8 @@
     config:
       name: config
       profile: dev
-      uri: http://localhost:8764/  
+      #uri: http://localhost:8764/  
       label: master
+      discovery: 
+        enabled: true
+        service-id: config-server
